@@ -11,7 +11,7 @@ use console::Term;
 extern crate colorful;
 
 fn select_menu() -> std::io::Result<()> {
-    let items = vec!["Today's goal", "Write"];
+    let items = vec!["Today's goal", "Plan", "Write", "Delete", "Sign up", "Sign in", "Sign Out", "Exit"];
     let selection = Select::with_theme(&ColorfulTheme::default())
         .items(&items)
         .default(0)
